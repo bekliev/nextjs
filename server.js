@@ -18,7 +18,7 @@ app
 
     server.get('/tv-shows/:id', (req, res) => {
       const actualPage = '/tv-shows/post';
-      const queryParams = { title: '-- no title (rendered by server) --' };
+      const queryParams = { id: req.params.id };
       app.render(req, res, actualPage, queryParams);
     });
 
