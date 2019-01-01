@@ -45,6 +45,7 @@ export default withRouter(props => (
         padding: 0;
       }
       .container {
+        background-color: #f0f0f0;
         border-radius: 15px;
         margin: 20px;
         padding: 20px;
