@@ -3,26 +3,17 @@ import { withRouter } from 'next/router';
 import Nav from './Nav';
 import Title from './Title';
 
-const defaultStyles = {
-  borderRadius: 15,
-  margin: 20,
-  padding: 20,
-  boxShadow: 'inset 0 0 5px #ccc',
-  fontFamily:
-    'BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", "Roboto Rouble", sans-serif'
-};
-
 export default withRouter(props => (
   <div>
-    <div style={defaultStyles}>
+    <div className="container">
       <Nav />
       <Title value={props.title} />
 
       {props.children}
     </div>
     <div
+      className="container"
       style={{
-        ...defaultStyles,
         padding: '7px 20px',
         opacity: 0.8,
         fontSize: '75%'
@@ -47,5 +38,21 @@ export default withRouter(props => (
         </pre>
       </div>
     </div>
+
+    <style jsx global>{`
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        border-radius: 15px;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: inset 0 0 5px #ccc;
+        font-family: cursive, BlinkMacSystemFont, -apple-system, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          'Roboto Rouble', sans-serif;
+      }
+    `}</style>
   </div>
 ));
