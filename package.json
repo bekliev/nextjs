@@ -21,5 +21,9 @@
     "nextjs",
     "react"
   ],
-  "description": null
+  "description": null,
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-plugin-react": "^7.12.1"
+  }
 }
