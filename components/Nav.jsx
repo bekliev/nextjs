@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default () => (
+const Nav = () => (
   <nav>
     <style>
       {`
@@ -29,3 +29,5 @@ export default () => (
     </Link>
   </nav>
 );
+
+export default Nav;

@@ -15,7 +15,7 @@ export default withRouter(props => (
       <Markdown
         source={`
 This is our blog post.
-Yes. We can have a [link](/link).
+Yes. We can have a link to [about](/about) page.
 And we can have a title as well.
 
 ### This is a title
