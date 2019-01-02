@@ -1,7 +1,6 @@
 {
   "name": "nextjs",
   "version": "1.0.0",
-  "license": "MIT",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
