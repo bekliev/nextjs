@@ -1,11 +1,13 @@
 import { Fragment } from 'react';
+import PropTypes from 'prop-types';
+
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
 import Nav from './Nav';
 import Title from './Title';
 
-export default withRouter(props => (
+const Layout = props => (
   <Fragment>
     <Head>
       <title>{props.title}</title>
@@ -63,4 +65,20 @@ export default withRouter(props => (
       }
     `}</style>
   </Fragment>
-));
+);
+
+Layout.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.oneOfType([
+    PropTypes.array.isRequired,
+    PropTypes.object.isRequired
+  ]),
+  router: PropTypes.shape({
+    route: PropTypes.string.isRequired,
+    pathname: PropTypes.string.isRequired,
+    asPath: PropTypes.string.isRequired,
+    query: PropTypes.object.isRequired
+  })
+};
+
+export default withRouter(Layout);

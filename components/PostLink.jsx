@@ -4,6 +4,7 @@ import Link from 'next/link';
 const PostLink = ({ id, name, category, slugValue, slugKey }) => (
   <li>
     <Link
+      prefetch
       as={`/${category}/${id}`}
       href={`/${category}/post?${slugKey}=${slugValue}`}
     >
