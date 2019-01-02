@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
@@ -5,7 +6,7 @@ import Nav from './Nav';
 import Title from './Title';
 
 export default withRouter(props => (
-  <>
+  <Fragment>
     <Head>
       <title>{props.title}</title>
     </Head>
@@ -16,14 +17,7 @@ export default withRouter(props => (
 
       {props.children}
     </div>
-    <div
-      className="container"
-      style={{
-        padding: '7px 20px',
-        opacity: 0.8,
-        fontSize: '75%'
-      }}
-    >
+    <div className="container container--dev-info">
       <p>
         <b>Environment:</b> {process.env.NODE_ENV}
       </p>
@@ -49,6 +43,9 @@ export default withRouter(props => (
         margin: 0;
         padding: 0;
       }
+    `}</style>
+
+    <style jsx>{`
       .container {
         background-color: #f0f0f0;
         border-radius: 15px;
@@ -59,6 +56,11 @@ export default withRouter(props => (
           Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
           'Roboto Rouble', sans-serif;
       }
+      .container--dev-info {
+        padding: 7px 20px;
+        opacity: 0.8;
+        font-size: 87.5%;
+      }
     `}</style>
-  </>
+  </Fragment>
 ));
