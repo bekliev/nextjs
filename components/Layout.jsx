@@ -1,10 +1,15 @@
 import { withRouter } from 'next/router';
+import Head from 'next/head';
 
 import Nav from './Nav';
 import Title from './Title';
 
 export default withRouter(props => (
-  <div>
+  <>
+    <Head>
+      <title>{props.title}</title>
+    </Head>
+
     <div className="container">
       <Nav />
       <Title value={props.title} />
@@ -55,5 +60,5 @@ export default withRouter(props => (
           'Roboto Rouble', sans-serif;
       }
     `}</style>
-  </div>
+  </>
 ));

@@ -1,9 +1,11 @@
-import Layout from '../../components/Layout';
+import Link from 'next/link';
+
 import fetch from 'isomorphic-unfetch';
 
+import Layout from '../../components/Layout';
+
 const Post = props => (
-  <Layout>
-    <h1>{props.show.name}</h1>
+  <Layout title={props.show.name}>
     <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
     <img src={props.show.image.medium} />
 

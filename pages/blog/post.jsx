@@ -1,12 +1,13 @@
 import { withRouter } from 'next/router';
+import Link from 'next/link';
+
 import Markdown from 'react-markdown';
+
 import Layout from '../../components/Layout';
 
 export default withRouter(props => (
-  <Layout>
+  <Layout title={props.router.query.title}>
     <button onClick={() => window.history.back()}>&laquo; Back to list</button>
-
-    <h1>{props.router.query.title}</h1>
 
     <div className="markdown">
       <Markdown
