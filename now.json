@@ -2,8 +2,10 @@
   "version": 2,
   "name": "nextjs",
   "alias": "nextjs.now.sh",
-  "builds": [
-    { "src": "package.json", "use": "@now/next" },
-    { "src": "server.js", "use": "@now/node-server" }
+  "builds": [{ "src": "package.json", "use": "@now/next" }],
+  "routes": [
+    { "src": "/blog/(?<slug>.+)", "dest": "/blog/post?title=$slug" },
+    { "src": "/tv-shows/(?<slug>.+)", "dest": "/tv-shows/post?id=$slug" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
