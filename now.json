@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "name": "nextjs",
+  "alias": "nextjs.now.sh",
   "builds": [
     { "src": "package.json", "use": "@now/next" },
     { "src": "server.js", "use": "@now/node-server" }
