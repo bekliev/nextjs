@@ -7,7 +7,9 @@ import Layout from '../../components/Layout';
 
 export default withRouter(props => (
   <Layout title={props.router.query.title}>
-    <button onClick={() => window.history.back()}>&laquo; Back to list</button>
+    <Link href="/blog">
+      <button>&laquo; Back to list</button>
+    </Link>
 
     <div className="markdown">
       <Markdown

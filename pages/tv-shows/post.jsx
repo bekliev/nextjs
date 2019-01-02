@@ -6,6 +6,10 @@ import Layout from '../../components/Layout';
 
 const Post = props => (
   <Layout title={props.show.name}>
+    <Link href="/tv-shows">
+      <button>&laquo; Back to list</button>
+    </Link>
+
     <p>{props.show.summary.replace(/<[/]?p>/g, '')}</p>
     <img src={props.show.image.medium} />
 
