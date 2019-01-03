@@ -1,16 +1,27 @@
 import { Fragment } from 'react';
-import PropTypes from 'prop-types';
 
 import { withRouter } from 'next/router';
-import Head from 'next/head';
 
 import Meta from './Meta';
 import Nav from './Nav';
 import Title from './Title';
+import GitHubButton from './GitHubButton';
 
 const Layout = props => (
   <Fragment>
     <Meta title={props.title} />
+
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'flex-end',
+        margin: '10px 10px -10px',
+        padding: '10px 10px 0'
+      }}
+    >
+      <GitHubButton />
+      <GitHubButton type="follow" width="220" />
+    </div>
 
     <div className="container">
       <Nav />
