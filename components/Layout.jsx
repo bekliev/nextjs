@@ -4,14 +4,13 @@ import PropTypes from 'prop-types';
 import { withRouter } from 'next/router';
 import Head from 'next/head';
 
+import Meta from './Meta';
 import Nav from './Nav';
 import Title from './Title';
 
 const Layout = props => (
   <Fragment>
-    <Head>
-      <title>{props.title}</title>
-    </Head>
+    <Meta title={props.title} />
 
     <div className="container">
       <Nav />
@@ -44,6 +43,7 @@ const Layout = props => (
       body {
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
       }
     `}</style>
 
