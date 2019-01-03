@@ -8,6 +8,10 @@
     "start": "NODE_ENV=production node server.js",
     "deploy": "now rm nextjs --save --yes && now && now alias"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeklievParviz/nextjs.git"
+  },
   "dependencies": {
     "express": "^4.16.4",
     "isomorphic-unfetch": "^3.0.0",
@@ -23,7 +27,7 @@
     "nextjs",
     "react"
   ],
-  "description": null,
+  "description": "",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^5.11.1",
