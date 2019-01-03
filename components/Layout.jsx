@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 import { withRouter } from 'next/router';
 
