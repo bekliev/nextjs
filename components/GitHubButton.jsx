@@ -28,7 +28,7 @@ GitHubButton.propTypes = {
   width: PropTypes.string.isRequired
 };
 GitHubButton.defaultProps = {
-  user: 'BeklievParviz',
+  user: 'Bekliev',
   repo: 'nextjs',
   type: 'star',
   count: false,
