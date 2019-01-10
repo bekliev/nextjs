@@ -1,9 +1,3 @@
-import Layout from '../components/Layout';
-
-const AboutPage = () => (
-  <Layout title="About us!">
-    <p>Lorem ipsum dolor sit amet...</p>
-  </Layout>
-);
+const AboutPage = () => <p>Lorem ipsum dolor sit amet...</p>;
 
 export default AboutPage;

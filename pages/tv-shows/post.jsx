@@ -3,13 +3,11 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import fetch from 'isomorphic-unfetch';
 
-import Layout from '../../components/Layout';
-
 const TVShowsPostPage = ({ show }) => {
   const [codeVisibility, setCodeVisibility] = useState(false);
 
   return (
-    <Layout title={show.name}>
+    <>
       <Link href="/tv-shows">
         <button>&laquo; Back to list</button>
       </Link>
@@ -41,7 +39,7 @@ const TVShowsPostPage = ({ show }) => {
           }
         `}</style>
       </pre>
-    </Layout>
+    </>
   );
 };
 

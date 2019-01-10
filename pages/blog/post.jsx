@@ -3,10 +3,8 @@ import Link from 'next/link';
 
 import Markdown from 'react-markdown';
 
-import Layout from '../../components/Layout';
-
-export default withRouter(props => (
-  <Layout title={props.router.query.title}>
+export default withRouter(() => (
+  <>
     <Link href="/blog">
       <button>&laquo; Back to list</button>
     </Link>
@@ -41,5 +39,5 @@ And here's the content.
         text-transform: uppercase;
       }
     `}</style>
-  </Layout>
+  </>
 ));

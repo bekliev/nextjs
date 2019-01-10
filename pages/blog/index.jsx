@@ -1,4 +1,3 @@
-import Layout from '../../components/Layout';
 import PostLink from '../../components/PostLink';
 
 function getBlogPosts() {
@@ -16,10 +15,10 @@ function getBlogPosts() {
 }
 
 const BlogPage = () => (
-  <Layout title="Blog Next.js">
+  <>
     <p>Links to posts about Next.js you can find below:</p>
     <ul>
-      {getBlogPosts().map(post => (
+      {data.map(post => (
         <PostLink
           key={'blogpost:' + post.id}
           category="blog"
@@ -35,7 +34,7 @@ const BlogPage = () => (
         padding: 0;
       }
     `}</style>
-  </Layout>
+  </>
 );
 
 export default BlogPage;
