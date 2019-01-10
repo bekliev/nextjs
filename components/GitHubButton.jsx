@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import PropTypes from 'prop-types';
 
 const GitHubButton = ({ user, repo, type, count, size, width }) => {
@@ -36,4 +37,4 @@ GitHubButton.defaultProps = {
   width: '90'
 };
 
-export default GitHubButton;
+export default memo(GitHubButton);

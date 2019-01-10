@@ -1,11 +1,10 @@
 import fetch from 'isomorphic-unfetch';
 import PropTypes from 'prop-types';
 
-import Layout from '../../components/Layout';
 import PostLink from '../../components/PostLink';
 
 const TVShowsPage = ({ data }) => (
-  <Layout title="Batman TV Shows">
+  <>
     <p>{`Data fetched count: ${data.length}`}</p>
     <ul>
       {data.map(({ show }) => (
@@ -18,7 +17,7 @@ const TVShowsPage = ({ data }) => (
         />
       ))}
     </ul>
-  </Layout>
+  </>
 );
 
 TVShowsPage.propTypes = {

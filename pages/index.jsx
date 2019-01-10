@@ -1,9 +1,3 @@
-import Layout from '../components/Layout';
-
-const HomePage = () => (
-  <Layout title="Hello world!">
-    <p>Welcome bro!</p>
-  </Layout>
-);
+const HomePage = () => <p>Welcome bro!</p>;
 
 export default HomePage;
