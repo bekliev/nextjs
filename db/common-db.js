@@ -5,6 +5,7 @@ const common = {
     { title: 'About us!', url: '/about', exact: true },
     { title: 'Batman TV Shows', url: '/tv-shows', exact: false },
     { title: 'Abc page with queries', url: '/abc', exact: true },
+    { title: 'Material UI TextFields', url: '/materialui', exact: true },
   ]
 };
 
