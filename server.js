@@ -29,6 +29,12 @@ app
       app.render(req, res, actualPage, queryParams);
     });
 
+    server.get('/abc/:slug', (req, res) => {
+      const actualPage = '/abc';
+      const queryParams = { slug: req.params.slug };
+      app.render(req, res, actualPage, queryParams);
+    });
+
     server.get('*', (req, res) => {
       return handle(req, res);
     });
