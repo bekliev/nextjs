@@ -22,6 +22,12 @@ const Nav = () => (
     <Link href="/tv-shows">
       <a>TV Shows</a>
     </Link>
+    <Link href="/abc?slug=123" as="/abc/123">
+      <a>Link with query</a>
+    </Link>
+    <Link href="/materialui">
+      <a>Material-UI</a>
+    </Link>
   </nav>
 );
 
