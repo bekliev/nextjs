@@ -10,6 +10,7 @@
     { "src": "/static/(.*)", "dest": "/static/$1" },
     { "src": "/blog/(?<slug>.+)", "dest": "/blog/post?title=$slug" },
     { "src": "/tv-shows/(?<slug>.+)", "dest": "/tv-shows/post?id=$slug" },
+    { "src": "/abc/(?<slug>.+)", "dest": "/abc?slug=$slug" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
