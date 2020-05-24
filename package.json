@@ -22,7 +22,7 @@
     "next": "^7.0.2",
     "nprogress": "^0.2.0",
     "react": "16.7.0-alpha.2",
-    "react-dom": "16.7.0-alpha.2",
+    "react-dom": "16.13.0",
     "react-markdown": "^4.0.4"
   },
   "license": "ISC",
