@@ -34,7 +34,7 @@
   "description": "",
   "devDependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.11.1",
+    "eslint": "^7.1.0",
     "eslint-plugin-react": "^7.12.1"
   },
   "browserslist": [
